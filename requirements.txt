@@ -1,10 +1,10 @@
-# local package
+ipykernel
+pandas
+numpy
+scikit-learn
+nltk
+optuna
+xgboost
+optuna-integration[mlflow]
+mlflow
 -e .
-
-# external requirements
-click
-Sphinx
-coverage
-awscli
-flake8
-python-dotenv>=0.5.1
