@@ -4,7 +4,9 @@ numpy
 scikit-learn
 nltk
 optuna
-xgboost
 optuna-integration[mlflow]
 mlflow
+python-dotenv
+dvc[s3]
+awscli
 -e .
