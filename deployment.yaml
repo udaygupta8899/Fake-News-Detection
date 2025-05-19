@@ -21,7 +21,7 @@ spec:
       containers:
       - name: flask-app
         # Explicitly tag the image (avoid implicit :latest ambiguity)
-        image: 020471112700234.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
+        image: 471112700234.dkr.ecr.us-east-1.amazonaws.com/flask-app
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
