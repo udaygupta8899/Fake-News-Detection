@@ -14,15 +14,9 @@ spec:
       labels:
         app: flask-app
     spec:
-      # Tell Kubernetes to use the ECR pull secret you created
-      imagePullSecrets:
-        - name: ecr-secret
-
       containers:
       - name: flask-app
-        # Explicitly tag the image (avoid implicit :latest ambiguity)
-        image: 471112700234.dkr.ecr.us-east-1.amazonaws.com/flask-app
-        imagePullPolicy: IfNotPresent
+        image: 471112700234.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
         ports:
         - containerPort: 5000
         resources:
